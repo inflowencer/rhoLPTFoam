@@ -1,0 +1,3 @@
+rhoLPTFoam.C
+
+EXE = $(FOAM_APPBIN)/rhoLPTFoam
