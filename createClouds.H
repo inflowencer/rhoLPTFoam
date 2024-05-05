@@ -4,7 +4,7 @@ const word thermoCloudName
 );
 
 Info<< "\nConstructing thermoCloud" << thermoCloudName << endl;
-basicThermoKinematicCollidingCloud thermoCloud
+basicThermoCloud thermoCloud
 (
     thermoCloudName,
     rho,

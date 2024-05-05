@@ -49,7 +49,7 @@ Description
 #include "fvcSmooth.H"
 #include "SLGThermo.H"
 #include "cloudMacros.H"
-#include "basicThermoKinematicCollidingCloud.H"
+#include "basicThermoCloud.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -58,8 +58,7 @@ int main(int argc, char *argv[])
     argList::addNote
     (
         "Transient solver based on 'rhoCentralFoam' with"
-        " reacting, multiphase particle clouds and surface"
-        " film modelling."
+        " multiphase particle clouds and surface film modelling."
     );
 
     #define NO_CONTROL
