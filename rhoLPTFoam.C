@@ -259,8 +259,6 @@ int main(int argc, char *argv[])
                 fvm::ddt(rho, U) - fvc::ddt(rho, U)
               - fvm::laplacian(muEff, U)
               - fvc::div(tauMC)
-              ==
-                thermoCloud.SU(U) // Two-way coupling
             );
             rhoU = rho*U;
         }
@@ -298,8 +296,6 @@ int main(int argc, char *argv[])
             (
                 fvm::ddt(rho, e) - fvc::ddt(rho, e)
               - fvm::laplacian(turbulence->alphaEff(), e)
-              ==
-                thermoCloud.Sh(e)  // Two-way energy coupling
             );
             thermo.correct();
             rhoE = rho*(e + 0.5*magSqr(U));
